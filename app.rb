@@ -13,6 +13,10 @@ class Pumatra < Sinatra::Base
     slim :index
   end
 
+  get '/api' do
+    request.ip
+  end
+
   run! if app_file == $0
 end
 
