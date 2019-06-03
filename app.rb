@@ -14,7 +14,7 @@ class Pumatra < Sinatra::Base
     slim :index
   end
 
-  get 'ip.json' do
+  get '/ip.json' do
     content_type :json
     { ip: request.ip }.to_json
   end
